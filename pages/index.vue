@@ -4,7 +4,7 @@
       <h2 class="app__block-title">{{ card.title }}</h2>
       <h2 class="app__block-subtitle">{{ card.subtitle }}</h2>
     </div>
-    <div class="app__block-big" v-if="succcessShow">
+    <div class="app__block-big" v-dragged="onDragged" v-if="succcessShow">
       <h2 class="app__block-title" v-for="card of newCard">{{ card }}</h2>
     </div>
     <button class="success" @click="successCard">Соеденить</button>
